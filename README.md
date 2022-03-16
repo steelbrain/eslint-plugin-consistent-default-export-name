@@ -2,14 +2,6 @@
 
 Adds rules to help use consistent "default export" names throughout the project.
 
-This plugin is basically a repackaging of two rules, each from two separate plugins:
-
-1. __default-export-match-filename__: checks when filename does not match its default export name
-    ![default-export-match-filename.png](https://raw.githubusercontent.com/minseoksuh/eslint-plugin-consistent-default-export-name/main/assets/default-export-match-filename.png)
-
-2. __default-import-match-filename__: checks when default import name does not match its source filename
-    ![default-import-match-filename.png](https://raw.githubusercontent.com/minseoksuh/eslint-plugin-consistent-default-export-name/main/assets/default-import-match-filename.png)
-
 If both rules are activated, default names will be consistent overall.
 
 ## I DID NOT WRITE THE RULES
@@ -22,11 +14,11 @@ Forked from [@minseoksuh](https://github.com/minseoksuh/eslint-plugin-consistent
 ## Installation
 
 ```shell
-npm install eslint-plugin-consistent-default-export-name --save-dev
+npm install @steelbrain/consistent-modules --save-dev
 ```
 
 ```shell
-yarn add -D eslint-plugin-consistent-default-export-name
+yarn add -D @steelbrain/consistent-modules
 ```
 
 ## Rule Option & Documentation
@@ -40,7 +32,7 @@ yarn add -D eslint-plugin-consistent-default-export-name
 
     ```json
     {
-        "extends": ["plugin:consistent-default-export-name/recommended"]
+        "extends": ["plugin:@steelbrain/consistent-modules/recommended"]
     }
     ```
 
@@ -49,8 +41,8 @@ yarn add -D eslint-plugin-consistent-default-export-name
     ```json
     {
         "rules": {
-            "consistent-default-export-name/default-export-match-filename": "error",
-            "consistent-default-export-name/default-import-match-filename": "error"
+            "@steelbrain/consistent-modules/default-export-match-filename": "error",
+            "@steelbrain/consistent-modules/default-import-match-filename": "error"
         }
     }
     ```
@@ -60,11 +52,7 @@ yarn add -D eslint-plugin-consistent-default-export-name
     ```json
     {
         "rules": {
-            "consistent-default-export-name/default-export-match-filename": "error",
+            "@steelbrain/consistent-modules/default-export-match-filename": "error",
         }
     }
     ```
-
-## Github
-
-[https://github.com/minseoksuh/eslint-plugin-consistent-default-export-name/blob/main/README.md](https://github.com/minseoksuh/eslint-plugin-consistent-default-export-name/blob/main/README.md)

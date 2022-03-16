@@ -1,4 +1,4 @@
-# consistent-default-export-name/default-export-match-filename (filenames/match-exported)
+# @steelbrain/consistent-modules/default-export-match-filename (filenames/match-exported)
 
 > @author Stefan Lau
 
@@ -22,7 +22,7 @@ export default { foo: "bar" };
 If your filename policy doesn't quite match with your variable naming policy, you can add one or multiple transforms:
 
 ```json
-"consistent-default-export-name/default-export-match-filename": [ 2, "kebab" ]
+"@steelbrain/consistent-modules/default-export-match-filename": [ 2, "kebab" ]
 ```
 
 Now, in your code:
@@ -41,7 +41,7 @@ Available transforms:
 For multiple transforms simply specify an array like this (null in this case stands for no transform):
 
 ```json
-"consistent-default-export-name/default-export-match-filename": [2, [ null, "kebab", "snake" ] ]
+"@steelbrain/consistent-modules/default-export-match-filename": [2, [ null, "kebab", "snake" ] ]
 ```
 
 If you prefer to use suffixes for your files (e.g. `Foo.react.js` for a React component file),
@@ -49,7 +49,7 @@ you can use a second configuration parameter. It allows you to remove parts of a
 before transforming and matching against the export.
 
 ```json
-"consistent-default-export-name/default-export-match-filename": [ 2, null, "\\.react$" ]
+"@steelbrain/consistent-modules/default-export-match-filename": [ 2, null, "\\.react$" ]
 ```
 
 Now, in your code:
@@ -62,7 +62,7 @@ export default function variableName;
 If you also want to match exported function calls you can use the third option (a boolean flag).
 
 ```json
-"consistent-default-export-name/default-export-match-filename": [ 2, null, null, true ]
+"@steelbrain/consistent-modules/default-export-match-filename": [ 2, null, null, true ]
 ```
 
 Now, in your code:
