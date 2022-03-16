@@ -1,12 +1,11 @@
 {
-    "name": "eslint-plugin-consistent-default-export-name",
+    "name": "@steelbrain/eslint-plugin-consistent-modules",
     "version": "0.0.14",
-    "homepage": "https://github.com/minseoksuh/eslint-plugin-consistent-default-export-name/blob/main/README.md",
-    "description": "eslint plugin with rules to help use default export names consistently throughout the project",
+    "homepage": "https://github.com/steelbrain/eslint-plugin-consistent-modules/blob/main/README.md",
+    "description": "An Eslint plugin with rules to help use default export names consistently throughout the project",
     "keywords": [
         "eslint",
-        "eslintplugin",
-        "eslint-plugin",
+        "eslint plugin",
         "default export",
         "default import"
     ],
@@ -17,15 +16,13 @@
         "docs",
         "LICENSE",
         "README.md"
-      ],
+    ],
     "scripts": {
         "test": "mocha tests --recursive"
     },
     "dependencies": {
-        "lodash.camelcase": "^4.3.0",
-        "lodash.kebabcase": "^4.1.1",
-        "lodash.snakecase": "^4.1.1",
-        "lodash.upperfirst": "^4.3.1"
+        "lodash": "^4.17.21",
+        "pkg-dir": "^5.0.0"
     },
     "devDependencies": {
         "eslint": "^7.1.0",
