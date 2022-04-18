@@ -1,6 +1,6 @@
 {
     "name": "@steelbrain/eslint-plugin-consistent-modules",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "homepage": "https://github.com/steelbrain/eslint-plugin-consistent-modules/blob/main/README.md",
     "description": "An Eslint plugin with rules to help use default export names consistently throughout the project",
     "keywords": [
